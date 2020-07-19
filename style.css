@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    color: #ffffff;
+    background-color: #383e56;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container1, .container2, .container3, .container4{
+    margin: 30px 30px;
+}
+
+.container1 select{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    appearance: none;
+}
+
+.seat{
+    background-color: #5c6279;
+    height: 15px;
+    width: 20px;
+    margin: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.seat:nth-of-type(2){
+    margin-right: 30px;
+}
+.seat:nth-of-type(6){
+    margin-right: 30px;
+}
+
+.seat:not(.Occupied):not(.showcase):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #c7e2b2;
+}
+
+.Selected{
+    background-color: #c7e2b2;
+}
+
+.Occupied{
+    background-color: #f69e7b;
+}
+
+.row,.label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    margin: 0 12px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.screen{
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    margin: 40px 0px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.container4 p span{
+    color: #c7e2b2;
+}
