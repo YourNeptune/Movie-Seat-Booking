@@ -44,5 +44,21 @@ function update() {
 // get data from localStorage and populate UI
 function populateUI(){
     const selectedSeats = JSON.parse(localStorage.getItem('selectedSeats'))
+    if(selectedSeats!==null && selectedSeats.length > 0){
+        seats.forEach((seat, index) => {
+            if(selectedSeats.indexOf(index) >= 0){
+                seat.classList.add('Selected')
+            }
+        })
+    }
+
+    const selectedMovieIndex = localStorage.getItem('selectedMovieIndex')
+    if(selectedMovieIndex !== null){
+        movie.selectedIndex = selectedMovieIndex    //set index
+        ticketPrice = +movie.value
+    }
 
 }
+
+populateUI()
+update()
