@@ -5,4 +5,4 @@
 3. Count the number of selected seats and calculate the total price.
 4. Use local storage to store data (selected movie and seats).
 
-![](demo.png | width=200)
+![](demo.png =200x400)
