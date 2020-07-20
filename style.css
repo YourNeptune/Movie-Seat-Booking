@@ -16,8 +16,13 @@ body{
 }
 
 
-.container1, .container2, .container3, .container4{
-    margin: 30px 30px;
+.container1, .container2, .container3{
+    margin: 30px 50px;
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
 }
 
 .container1 select{
@@ -25,7 +30,7 @@ body{
     border: none;
     border-radius: 3px;
     padding: 5px 10px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     appearance: none;
 }
 
@@ -67,7 +72,7 @@ body{
 }
 
 .label{
-    margin: 0 12px;
+    margin: 10px 12px;
 }
 
 .container2{
@@ -84,6 +89,11 @@ body{
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
 }
 
+.container4 p{
+    text-align: center;
+}
+
 .container4 p span{
     color: #c7e2b2;
+    padding: 0 5px;
 }
